@@ -1,0 +1,33 @@
+/* Nav Bar */
+
+.nav-bar
+{
+    width: fit-content;
+    border-bottom: var(--primary-color) 1px solid;
+    transition: border-color 0.5s ease, color 0.5s ease-out;
+    margin-bottom: 80px;
+}
+
+.nav-bar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-bar a {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.2s ease, color 0.2s ease-out;
+    
+}
+
+.nav-bar a:first-child
+{
+    padding-left: 0px;
+}
+
+.nav-bar a:hover {
+    color: var(--secondary-color);
+}

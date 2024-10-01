@@ -1,0 +1,56 @@
+/* styles.css */
+
+:root {
+    --primary-color: #000000; /* default light */
+    --background-color: #ebe7e2;
+    --secondary-color: #ffffff;
+}
+
+[data-theme='dark'] {
+    --primary-color: #ffffff;
+    --background-color: #050513;
+    --secondary-color: #39f8a9;
+}
+
+[data-theme='light'] {
+    --primary-color: #000000;
+    --background-color: #ebe7e2;
+    --secondary-color: #ffffff;
+}
+
+
+body {
+    color: var(--primary-color);
+    font-family: "Now";
+    background-color: var(--background-color);
+    margin-top: 100px;
+    margin-left: 10%;
+    transition: background-color 0.5s ease, color 0.5s ease-out;
+}
+
+@keyframes FlyUp
+{
+    0%
+    {
+        transform: translateY(30%);
+    }
+
+    100%
+    {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: "Now";
+    src: url("../fonts/Now-Regular.otf");
+}

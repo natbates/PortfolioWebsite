@@ -1,0 +1,20 @@
+/* theme button.css */
+
+.theme-button
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    min-width: 30px;
+    height: 30px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.theme-button:hover
+{
+    transform: scale(1.1);
+}

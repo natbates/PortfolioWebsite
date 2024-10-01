@@ -1,0 +1,26 @@
+/* home.css */
+
+#home h1, p
+{
+    opacity: 0;
+    animation: FlyUp 0.5s ease, appear 0.5s ease forwards !important;
+}
+
+#home h1 {
+    animation-delay: 0.2s !important; 
+}
+  
+#home p {
+    animation-delay: 0.4s !important;
+}
+
+.social-container 
+{
+    opacity: 0;
+    animation: FlyUp 0.5s ease, appear 0.5s ease forwards;
+    animation-delay: 0.6s !important;
+}
+
+#name{
+    color: var(--secondary-color);
+}

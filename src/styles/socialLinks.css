@@ -1,0 +1,30 @@
+.social-container
+{
+    display: flex;
+    justify-content: row;
+    height: 20px;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.social-container svg
+{
+    height: 100%;
+    width: auto;
+    padding-right: 10px;
+    fill: var(--primary-color);
+    transition: fill 0.5s ease;
+    margin: 0;
+}
+
+.social-container svg:hover
+{
+    fill: var(--secondary-color);
+}
+
+.social-container a
+{
+    display: flex;
+    align-items: stretch;
+}

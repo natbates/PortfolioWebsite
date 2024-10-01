@@ -1,0 +1,74 @@
+/* Projects */
+
+#projects h1, .project
+{
+    opacity: 0;
+    animation: FlyUp 0.5s ease, appear 0.5s ease forwards;
+}
+
+#projects h1 {
+    animation-delay: 0.2s; 
+}
+  
+.project {
+    animation-delay: 0.4s;
+}
+
+#project-container
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project
+{
+    transform-origin: top left;
+    border: 3px solid;
+    padding: 10px;
+    border-color: var(--primary-color);
+    max-width: 600px;
+    transition: margin-bottom 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.loading-container
+{
+    /*margin: auto; if you want it centred uncomment */ 
+}
+
+.project:hover
+{
+    margin-bottom: 25px;
+    border-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.project-link
+{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.loading
+{
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--secondary-color);
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: loadingAnimation 1s linear infinite;
+}
+
+@keyframes loadingAnimation
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

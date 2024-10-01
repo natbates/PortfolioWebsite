@@ -1,0 +1,15 @@
+/* home.css */
+
+#about h1, p
+{
+    opacity: 0;
+    animation: FlyUp 0.5s ease, appear 0.5s ease forwards !important;
+}
+
+#about h1 {
+    animation-delay: 0.2s !important; 
+}
+  
+#about p {
+    animation-delay: 0.4s !important;
+}
